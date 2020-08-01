@@ -17,13 +17,13 @@ app.use(bodyparser.urlencoded({
 app.use(bodyparser.json());
 app.use(express.static(path.join(__dirname,'/public')));
 app.set('views', path.join(__dirname, 'views'));
-const handlebars = exphbs.create({
-  // layoutsDir: path.join(__dirname, 'app/views/layouts'),
-  // partialsDir: path.join(__dirname, 'app/views/partials'),
-  defaultLayout: 'index',
-  extname: 'hbs'
-});
-app.set('view engine', 'handlebars.engine');
+app.engine('hbs',exphbs({
+    extname: 'hbs',
+    defaultLayout: 'menu',
+    layoutsDir: __dirname+'/views'
+
+}));
+app.set('view engine', 'hbs');
 app.listen(3000,()=>{
     console.log('Server on port: 3000');
 });
