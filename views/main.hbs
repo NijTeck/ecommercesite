@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>E-Commerce App</title>
+    <meta charset="utf-8">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/3.3.7/css/bootstrap.min.css">
+    <link rel="stylesheet" href="/public/css/style.css">
+  </head>
+
+<header>
+  <nav class="navbar fixed-top navbar-dark navbar-expand-md bg-success text-white">
+    <a class="text-white navbar-brand" href="/">
+      <i class="fab fa-pagelines">
+
+      </i> Phone Store
+    </a>
+    <button class="navbar-toggle" type="button" data-toggle="collapse" data-target="#navbarCollapse"
+      aria-controls="navbarCollapse" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggle-icon">
+
+      </span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarCollapse">
+      <ul class="navbar-nav mr-auto menu">
+        <li class="nav-item active">
+          <a href="#" class="nav-link"> Home</a>
+        </li>
+                <li class="nav-item active">
+          <a href="#galaxyPhones" class="nav-link">Galaxy Phones </a>
+        </li>
+                <li class="nav-item active">
+          <a href="iphones" class="nav-link"> Iphones </a>
+        </li>
+                <li class="nav-item active">
+          <a href="pixels" class="nav-link"> Pixel Phones</a>
+        </li>
+
+      </ul>
+
+      <form class="form-inline mt-2 mt-md-0">
+        <a href="/cart" class="text-white nave-link">
+          <i  class="text-warning fas fa-shopping-cart">
+          </i> Shopping Cart <i style="color:yellow" id="cart_n"></i>
+        </a>
+        <a href="/admin" class="nav-link disabled text-white">
+          <i class="far fa-user"> </i>
+          Administrator</a>
+
+      </form>
+    </div>
+  </nav>
+</header>
+
+<main role="main">
+  <div class="carousel slide" data-rid="carousel" id="myCarousel">
+    <ol class="carousel-indicators">
+      <li style="z-index: 102;" data-target="#myCarousel" data-slide-to="0"
+      class="active"> </li>
+            <li style="z-index: 102;" data-target="#myCarousel" data-slide-to="0"
+      class="active"> </li>
+            <li style="z-index: 102;" data-target="#myCarousel" data-slide-to="0"
+      class="active"> </li>
+    </ol>
+    <div class="carousel-inner">
+      <div class="carousel-item-active">
+        <img src="imagFilter first-slide" src="/public/img/galaxyPhones/galaxyfold.jpg" alt="GalaxyFold">
+        <div class="container">
+          <div class="carousel-caption">
+
+            <h1> Galaxy</h1> 
+            <p> New hardly used Galaxy phone for sale. </p>
+            <p> <a href="#" role="button" class="btn btn-primary btn-lg"> Products</a></p>
+          </div>
+        </div>
+      </div>
+
+       <div class="carousel-inner">
+      <div class="carousel-item">
+        <img src="imagFilter second-slide" src="/public/img/galaxyPhones/galaxys10.jpg" alt="Second Slide">
+        <div class="container">
+          <div class="carousel-caption text-left">
+
+            <h1> Galaxy</h1> 
+            <p> New hardly used Galaxy phone for sale. </p>
+            <p> <a href="#" role="button" class="btn btn-primary btn-lg"> Products</a></p>
+          </div>
+        </div>
+      </div>
+
+       <div class="carousel-inner">
+      <div class="carousel-item">
+        <img src="imagFilter third-slide" src="/public/img/galaxyPhones/galaxys8.jpg" alt="Third Slide">
+        <div class="container">
+          <div class="carousel-caption text-right">
+
+            <h1> Galaxy</h1> 
+            <p> New hardly used Galaxy phone for sale. </p>
+            <p> <a href="#" role="button" class="btn btn-primary btn-lg"> Products</a></p>
+          </div>
+        </div>
+      </div>
+
+<a style="z-index: 101;" class="carousel-control-prev" role="button" data-slide="prev"  href="#myCarousel">
+      <span class="carousel-control-prev-icon" aria-hidden="true" > </span>
+      <span class="sr-only"> Previus </span>
+</a>
+<a style="z-index: 101;" class="carousel-control-next" role="button" data-slide="next"  href="#myCarousel">
+      <span class="carousel-control-prev-icon" aria-hidden="true" > </span>
+      <span class="sr-only"> Next </span>
+</a>
+
+    </div>
+  </div>
+
+<div class="container marketing">
+  <br>
+  <h2 id="galaxyPhones">Galaxy</h2>
+  <hr> 
+  <div class="row" id="galaxyPhoneDIV"> </div>
+  <h2 id="iphone"> Iphone </h2>
+  <hr> 
+  <div class="row" id="iphoneDIV"></div>
+</div>
+  <h2 id="pixels">Pixels</h2>
+  <hr> 
+  <div class="row" id="pixelsDIV"> </div>
+  <hr class="featurette-divider">
+</div>
+</main>
+<script src="/js/main.js"></script>
