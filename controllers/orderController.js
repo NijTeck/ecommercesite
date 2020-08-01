@@ -7,7 +7,7 @@ mongoose.set('useFindAndModify',false);
 //Router
 
 router.get('/',(req,res)=>{
-    res.render('main');
+    res.render('menu');
 });
 router.get('/cart',(req,res)=>{
     res.render('cart');
