@@ -81,5 +81,5 @@ function insertOrder(req,res) {
             console.log('Error insertOrder:'+err);
         }
     });
-}
+};
 module.exports=router;

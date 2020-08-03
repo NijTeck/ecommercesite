@@ -20,7 +20,7 @@ app.set('views', path.join(__dirname, 'views'));
 app.engine('hbs',exphbs({
     extname: 'hbs',
     defaultLayout: 'menu',
-    layoutsDir: __dirname+'/views'
+    layoutsDir: __dirname+'/views/'
 
 }));
 app.set('view engine', 'hbs');
